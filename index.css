@@ -1,0 +1,141 @@
+html {
+  background-color: #fff987;
+  color: #ffc400;
+  text-align: center;
+  font-family: 'Shantell Sans', cursive;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 2rem;
+  text-decoration: wavy;
+  padding: 0;
+  margin: 0;
+}
+a:link, a:visited, a:hover, a:active {
+  color:#ffc400;
+  text-decoration: wavy;
+}
+img {
+  height: 300px;
+  border-radius: 20px;
+}
+h6 {
+  color: #fff987;
+}
+
+#leaf {
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+}
+
+
+#cloud > a {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Shantell Sans', cursive;
+  z-index: 1;
+  color: #ffc400;
+
+}
+  
+.move {
+  position: absolute;
+  top:45%;
+  left:20%;
+  transform: translate(-50%,-50%);
+}
+
+#cloud {
+  background: rgba(255, 255, 255);
+  width: 300px; 
+  height: 100px;
+  border-radius: 150px;	
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  animation: move 3s infinite;
+  text-align: center;
+  z-index: -1;
+}
+
+#cloud:after {
+  content: '';
+  background: rgba(255, 255, 255);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+  z-index: -1;
+}
+
+#cloud:before {
+  content: '';
+  background: rgb(255, 255, 255);
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+  z-index: -1;
+}
+
+#lost {
+  background: white;
+  width: 200px; 
+  height: 200px;
+  /* position: absolute; */
+  top: 26%;
+  right: 10%;     
+  border-radius: 40px;
+  /* animation: move 3s infinite; */
+}
+
+#orange {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+#images {
+  border-radius: 20px;
+}
+
+#log1 {
+  position: absolute;
+  top: 1%;
+  left: 10%;
+}
+#log2 {
+  position: absolute;
+  top: 1%;
+  right: 10%;
+}
+#photoshop {
+  position: relative;
+}
+
+/* FLEXBOXXX */
+#flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px 20px;
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-40px);
+  }
+}
+
